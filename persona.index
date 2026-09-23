@@ -5,10 +5,10 @@
 		<description>Persona User class and Persona archetypes for D&amp;D 2024.</description>
 		<author url="https://github.com/CrimsonVir/Aurora-persona-user-class">CrimsonVir</author>
 		<update version="1.0.0">
-			<file name="PersonaUser.xml" url="https://raw.githubusercontent.com/CrimsonVir/Aurora-persona-user-class/refs/heads/main/Persona/PersonaUser.xml" />
+			<file name="PersonaUser.xml" url="https://raw.githubusercontent.com/CrimsonVir/Aurora-persona-user-class/main/Persona/PersonaUser.xml" />
 		</update>
 	</info>
 	<files>
-		<file name="PersonaUser.xml" url="https://raw.githubusercontent.com/CrimsonVir/Aurora-persona-user-class/refs/heads/main/Persona/PersonaUser.xml" />
+		<file name="PersonaUser.xml" url="https://raw.githubusercontent.com/CrimsonVir/Aurora-persona-user-class/main/Persona/PersonaUser.xml" />
 	</files>
 </index>
