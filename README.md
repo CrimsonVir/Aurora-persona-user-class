@@ -1,0 +1,1 @@
+# Aurora-persona-user-class
