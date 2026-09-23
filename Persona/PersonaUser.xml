@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<elements>
+
+  <!-- ========================================================= -->
+  <!-- PERSONA USER CLASS                                        -->
+  <!-- ========================================================= -->
+
+  <element
+    name="Persona User"
+    type="Class"
+    source="Persona User"
+    id="ID_PERSONA_USER_CLASS">
+
+    <description>
+
+      <p>
+        Persona Users are individuals capable of summoning manifestations
+        of their inner selves. These Personas grant supernatural abilities
+        drawn from their nature and affinity.
+      </p>
+
+      <p>
+        A Persona User's power is determined by their chosen Persona
+        archetype. Each archetype grants a unique collection of supernatural
+        abilities and elemental techniques.
+      </p>
+
+      <h5>Starting Equipment</h5>
+      <p>
+        You start with the following equipment, in addition to the equipment
+        granted by your background:
+      </p>
+      <ul>
+        <li>A simple weapon</li>
+        <li>Light armor</li>
+        <li>An adventurer's pack</li>
+        <li>A focus associated with your Persona</li>
+      </ul>
+
+    </description>
+
+    <setters>
+      <set name="hd">d8</set>
+      <set name="armor">Light armor</set>
+      <set name="weapons">Simple weapons</set>
+      <set name="tools">None</set>
+      <set name="savingThrows">Charisma, Wisdom</set>
+      <set name="skills">Choose 2 from Arcana, Deception, Insight, Intimidation, Investigation, Perception, Persuasion</set>
+    </setters>
+
+    <multiclass id="ID_PERSONA_USER_CLASS">
+      <prerequisite>Charisma 13</prerequisite>
+      <requirements>[cha:13]</requirements>
+      <setters>
+        <set name="multiclass proficiencies">Light armor, simple weapons</set>
+      </setters>
+      <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+      </rules>
+    </multiclass>
+
+    <rules>
+
+      <!-- Level 1 -->
+      <grant
+        type="Class Feature"
+        id="ID_PERSONA_USER_PERSONA_SUMMONING"
+        level="1" />
+
+      <grant
+        type="Class Feature"
+        id="ID_PERSONA_USER_PERSONA_POWER"
+        level="1" />
+
+      <grant
+        type="Class Feature"
+        id="ID_PERSONA_USER_AWAKENING"
+        level="1" />
+
+      <!-- Level 2 -->
+      <grant
+        type="Class Feature"
+        id="ID_PERSONA_USER_PERSONA_FOCUS"
+        level="2" />
+
+      <!-- Level 3 -->
+      <grant
+        type="Class Feature"
+        id="ID_PERSONA_USER_PERSONA_ARCHETYPE"
+        level="3" />
+
+      <!-- Level 5 -->
+      <grant
+        type="Class Feature"
+        id="ID_PERSONA_USER_EXTRA_ATTACK"
+        level="5" />
+
+      <!-- Level 7 -->
+      <grant
+        type="Class Feature"
+        id="ID_PERSONA_USER_PERSONA_EVOLUTION"
+        level="7" />
+
+      <!-- Level 9 -->
+      <grant
+        type="Class Feature"
+        id="ID_PERSONA_USER_PERSONA_MASTERY"
+        level="9" />
+
+      <!-- Level 11 -->
+      <grant
+        type="Class Feature"
+        id="ID_PERSONA_USER_GREATER_PERSONA"
+        level="11" />
+
+      <!-- Level 13 -->
+      <grant
+        type="Class Feature"
+        id="ID_PERSONA_USER_PERSONA_ASCENSION"
+        level="13" />
+
+      <!-- Level 15 -->
+      <grant
+        type="Class Feature"
+        id="ID_PERSONA_USER_RESOLVE"
+        level="15" />
+
+      <!-- Level 18 -->
+      <grant
+        type="Class Feature"
+        id="ID_PERSONA_USER_ULTIMATE_PERSONA"
+        level="18" />
+
+      <!-- Level 19 -->
+      <grant
+        type="Class Feature"
+        id="ID_PERSONA_USER_EPIC_BOON"
+        level="19" />
+
+      <!-- Level 20 -->
+      <grant
+        type="Class Feature"
+        id="ID_PERSONA_USER_TRUE_AWAKENING"
+        level="20" />
+
+    </rules>
+
+  </element>
+
+
+  <!-- ========================================================= -->
+  <!-- PERSONA USER FEATURES                                     -->
+  <!-- ========================================================= -->
+
+  <element
+    name="Persona Summoning"
+    type="Class Feature"
+    source="Persona User"
+    id="ID_PERSONA_USER_PERSONA_SUMMONING">
+
+    <description>
+
+      <p>
+        You can summon your Persona as a supernatural manifestation of
+        your inner self. Summoning or dismissing your Persona requires
+        a Bonus Action.
+      </p>
+
+      <p>
+        Your Persona remains manifested until you dismiss it, become
+        Incapacitated, or die.
+      </p>
+
+      <p>
+        While your Persona is manifested, you can use its abilities and
+        cast spells granted by your Persona archetype.
+      </p>
+
+    </description>
+
+  </element>
+
+
+  <element
+    name="Persona Power"
+    type="Class Feature"
+    source="Persona User"
+    id="ID_PERSONA_USER_PERSONA_POWER">
+
+    <description>
+
+      <p>
+        Your Persona allows you to channel supernatural energy.
+        Charisma is your spellcasting ability for your Persona spells.
+      </p>
+
+      <p>
+        You use your Persona as your spellcasting focus.
+      </p>
+
+    </description>
+
+  </element>
+
+
+  <element
+    name="Awakening"
+    type="Class Feature"
+    source="Persona User"
+    id="ID_PERSONA_USER_AWAKENING">
+
+    <description>
+
+      <p>
+        Your connection to your Persona awakens supernatural potential.
+        You gain access to the Persona spell list and learn one Persona
+        spell of your choice.
+      </p>
+
+    </description>
+
+  </element>
+
+
+  <element
+    name="Persona Focus"
+    type="Class Feature"
+    source="Persona User"
+    id="ID_PERSONA_USER_PERSONA_FOCUS">
+
+    <description>
+
+      <p>
+        Your connection with your Persona deepens. When you cast a Persona
+        spell, you may use your Charisma modifier for its attack rolls and
+        saving throw DC.
+      </p>
+
+      <p>
+        Your Persona spell save DC equals 8 + your Proficiency Bonus +
+        your Charisma modifier.
+      </p>
+
+    </description>
+
+  </element>
+
+
+  <!-- ========================================================= -->
+  <!-- PERSONA ARCHETYPE SELECTION                               -->
+  <!-- ========================================================= -->
+
+  <element
+    name="Persona Archetype"
+    type="Class Feature"
+    source="Persona User"
+    id="ID_PERSONA_USER_PERSONA_ARCHETYPE">
+
+    <description>
+
+      <p>
+        At 3rd level, you choose the nature of your Persona. Your choice
+        grants you features at 3rd level and again at later levels.
+      </p>
+
+    </description>
+
+    <rules>
+      <select
+        type="Archetype"
+        name="Persona Archetype"
+        supports="Persona Archetype"
+        level="3" />
+    </rules>
+
+  </element>
+
+
+  <!-- ========================================================= -->
+  <!-- FIRE PERSONA                                              -->
+  <!-- ========================================================= -->
+
+  <element
+    name="Fire Persona"
+    type="Archetype"
+    source="Persona User"
+    id="ID_PERSONA_USER_ARCHETYPE_FIRE">
+
+    <supports>Persona Archetype</supports>
+
+    <description>
+
+      <p>
+        Your Persona commands the element of fire. Its power manifests
+        through destructive flames and supernatural heat.
+      </p>
+
+      <h5>Fire Persona Spells</h5>
+
+      <p>
+        Your Persona grants you the following spells. They are always
+        prepared for you and count as Persona spells for you.
+      </p>
+
+    </description>
+
+    <rules>
+
+      <!-- Fire Persona spell access -->
+      <grant
+        type="Spell"
+        id="ID_PERSONA_USER_SPELL_AGI" />
+
+      <!-- Future spells can be added here -->
+      <!--
+      <grant
+        type="Spell"
+        id="ID_PERSONA_USER_SPELL_MARAGI"
+        level="5" />
+      -->
+
+    </rules>
+
+  </element>
+
+
+  <!-- ========================================================= -->
+  <!-- FIRE PERSONA FEATURES                                     -->
+  <!-- ========================================================= -->
+
+  <element
+    name="Fire Affinity"
+    type="Class Feature"
+    source="Persona User"
+    id="ID_PERSONA_USER_FIRE_AFFINITY">
+
+    <supports>Fire Persona</supports>
+
+    <description>
+
+      <p>
+        Your Persona's attacks are infused with supernatural flame.
+        When you deal fire damage with a Persona spell, you can use your
+        Charisma modifier for the spell's attack roll or saving throw DC.
+      </p>
+
+    </description>
+
+  </element>
+
+
+  <!-- ========================================================= -->
+  <!-- AGI                                                        -->
+  <!-- ========================================================= -->
+
+  <element
+    name="Agi"
+    type="Spell"
+    source="Persona User"
+    id="ID_PERSONA_USER_SPELL_AGI">
+
+    <description>
+
+      <p>
+        You conjure a burst of supernatural flame and hurl it at a creature
+        within range. Make a ranged spell attack against the target.
+        On a hit, the target takes 3d8 fire damage.
+      </p>
+
+      <p class="indent">
+        <strong>At Higher Levels.</strong>
+        When you cast this spell using a spell slot of 2nd level or higher,
+        the damage increases by 1d8 for each slot level above 1st.
+      </p>
+
+    </description>
+
+    <setters>
+      <set name="level">1</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="range">60 feet</set>
+      <set name="duration">Instantaneous</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+
+    <supports>Persona User,Fire Persona</supports>
+
+  </element>
+
+
+  <!-- ========================================================= -->
+  <!-- GENERIC CLASS FEATURES                                    -->
+  <!-- ========================================================= -->
+
+  <element
+    name="Extra Attack"
+    type="Class Feature"
+    source="Persona User"
+    id="ID_PERSONA_USER_EXTRA_ATTACK">
+
+    <description>
+      <p>
+        You can attack twice, instead of once, whenever you take the Attack
+        action on your turn.
+      </p>
+    </description>
+
+  </element>
+
+
+  <element
+    name="Persona Evolution"
+    type="Class Feature"
+    source="Persona User"
+    id="ID_PERSONA_USER_PERSONA_EVOLUTION">
+
+    <description>
+      <p>
+        Your Persona evolves, increasing the power of its elemental abilities.
+      </p>
+    </description>
+
+  </element>
+
+
+  <element
+    name="Persona Mastery"
+    type="Class Feature"
+    source="Persona User"
+    id="ID_PERSONA_USER_PERSONA_MASTERY">
+
+    <description>
+      <p>
+        Your mastery of Persona abilities allows you to channel supernatural
+        energy with greater efficiency.
+      </p>
+    </description>
+
+  </element>
+
+
+  <element
+    name="Greater Persona"
+    type="Class Feature"
+    source="Persona User"
+    id="ID_PERSONA_USER_GREATER_PERSONA">
+
+    <description>
+      <p>
+        Your Persona reaches a greater form, unlocking its more powerful
+        abilities.
+      </p>
+    </description>
+
+  </element>
+
+
+  <element
+    name="Persona Ascension"
+    type="Class Feature"
+    source="Persona User"
+    id="ID_PERSONA_USER_PERSONA_ASCENSION">
+
+    <description>
+      <p>
+        Your Persona's supernatural power continues to grow.
+      </p>
+    </description>
+
+  </element>
+
+
+  <element
+    name="Resolve"
+    type="Class Feature"
+    source="Persona User"
+    id="ID_PERSONA_USER_RESOLVE">
+
+    <description>
+      <p>
+        Your bond with your Persona grants you extraordinary resilience.
+      </p>
+    </description>
+
+  </element>
+
+
+  <element
+    name="Ultimate Persona"
+    type="Class Feature"
+    source="Persona User"
+    id="ID_PERSONA_USER_ULTIMATE_PERSONA">
+
+    <description>
+      <p>
+        Your Persona approaches its ultimate form.
+      </p>
+    </description>
+
+  </element>
+
+
+  <element
+    name="Epic Boon"
+    type="Class Feature"
+    source="Persona User"
+    id="ID_PERSONA_USER_EPIC_BOON">
+
+    <description>
+      <p>
+        You gain an Epic Boon of your choice.
+      </p>
+    </description>
+
+  </element>
+
+
+  <element
+    name="True Awakening"
+    type="Class Feature"
+    source="Persona User"
+    id="ID_PERSONA_USER_TRUE_AWAKENING">
+
+    <description>
+      <p>
+        You have reached the pinnacle of Persona mastery.
+      </p>
+    </description>
+
+  </element>
+
+</elements>
