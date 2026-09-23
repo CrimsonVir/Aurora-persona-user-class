@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <element name="Maragi" type="Spell" source="Persona" id="ID_author_source_SPELL"Agi">
+    <info>
+        <name>Maragi</name>
+        <description>Fire Persona spell.</description>
+        <author url="https://github.com/CrimsonVir/Aurora-persona-user-class">CrimsonVir</author>
+        <update version="1.0.0">
+            <file name="maragi.xml" url="https://raw.githubusercontent.com/CrimsonVir/Aurora-persona-user-class/main/Persona/maragi.xml" />
+        </update>
+    </info>
+
+    <element
+        name="Maragi"
+        type="Spell"
+        source="Persona User"
+        id="ID_PERSONA_USER_SPELL_MARAGI">
+
         <supports>Fire Persona</supports>
+
         <description>
-            <p>Deal 1d8 Fire damage to one foe.
-            At Higher Levels. The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+            <p>Deal 2d8 Fire damage to one foe.</p>
+            <p class="indent">
+                <strong>At Higher Levels.</strong>
+                The spell's damage increases by 1d8 when you reach 5th level (3d8), 11th level (4d8), and 17th level (5d8).
+            </p>
         </description>
+
         <setters>
             <set name="keywords"></set>
-            <set name="level">1</set>
+            <set name="level">2</set>
             <set name="school">Evocation</set>
             <set name="time">1 action</set>
             <set name="range">60 ft</set>

@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <element name="Agi" type="Spell" source="Persona" id="ID_author_source_SPELL"Agi">
+    <info>
+        <name>Agi</name>
+        <description>Fire Persona spell.</description>
+        <author url="https://github.com/CrimsonVir/Aurora-persona-user-class">CrimsonVir</author>
+        <update version="1.0.0">
+            <file name="agi.xml" url="https://raw.githubusercontent.com/CrimsonVir/Aurora-persona-user-class/main/Persona/agi.xml" />
+        </update>
+    </info>
+
+    <element
+        name="Agi"
+        type="Spell"
+        source="Persona User"
+        id="ID_PERSONA_USER_SPELL_AGI">
+
         <supports>Fire Persona</supports>
+
         <description>
-            <p>Deal 1d8 Fire damage to one foe.
-            At Higher Levels. The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+            <p>Deal 1d8 Fire damage to one foe.</p>
+            <p class="indent">
+                <strong>At Higher Levels.</strong>
+                The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
+            </p>
         </description>
+
         <setters>
             <set name="keywords"></set>
             <set name="level">cantrip</set>
